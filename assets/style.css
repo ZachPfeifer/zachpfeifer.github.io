@@ -12,9 +12,11 @@
   }
 
   .menu {
-    display: list-item;
-    padding: 0;
+    display: grid;
+    padding: 0 0 0 0;
     overflow: scroll;
+    justify-content: center; 
+
   }
 
 .elegantshadow
@@ -234,10 +236,9 @@ a.social-link:active {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  justify-content: center; 
-  display: flex;
   background: black;
-
+  display: flex;
+  justify-content: center; 
 }
 
 .topnav {
