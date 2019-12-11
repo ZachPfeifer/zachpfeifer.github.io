@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Zach's Landing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--W3 Schools CSS-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<!--Booststrap Css-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!--Awesome Fonts Css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.css">
+
+<!--Google Fonts Css-->
+<link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+
+<!--My Css-->
+<link rel="stylesheet" href="style.css">
+
+
+<body class="w3-light-grey w3-content bg" style="max-width:1600px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center bg-nav"
+    style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+    <h3 class="w3-padding-64 w3-center"><b>Zachary<br>Pfeifer</b></h3>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+    <span class="w3-left w3-padding">Zachary Pfeifer</span>
+    <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+    title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+    <!-- Photo grid -->
+    <div class="w3-row">
+      <h1 class="scrible-text scrible-text text-center">Current Work:</h1>
+      <hr>
+      <div class="w3-third">
+
+        <div class="col-3">
+          <!--NOTE: Second Prototype Card-->
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./images/Highlands-Thumbnail.png" alt="Highland-Authority" style="width:366px;height:366px;">
+              </div>
+              <div class="flip-card-back font-size">
+                <h1>Highland Authority</h1>
+                <p>Vue.js / Node.js (MVC Pattern)</p>
+                <p>Highland Authority is a stat tracker website for Athletes that participate in Highland Games Events.
+                  On
+                  this site you can view all paricpants scores and contact info. This website also support the Judges
+                  for
+                  the games. Judges can add Athletes stats live while game is being played. Judges can also create Games
+                  for Athletes to compete in.</p>
+                <dl>Athlete Login:
+                  <dt> Email: test@judge.com</dt>
+                  <dt>Password: password123</dt>
+                </dl>
+                <dl>Judge Login:
+                  <dt>Email: test@judge.com</dt>
+                  <dt>Password: password123</dt>
+                </dl>
+                <hr>
+                <p class="card-text">
+                  <button type="button" class="btn btn-dark"
+                    onclick="window.location.href = 'https://github.com/TimDohmen/HighlandAuthority';">GitHub</button>
+                  <button type="button" class="btn btn-dark"
+                    onclick="window.location.href = 'https://highland-games.herokuapp.com/?#/login';">Website</button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/images/InspireThumbnail.png" alt="Inspire" style="width:366px;height:366px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Inspire</h1>
+                <p>JavaScript / Node.js (MVC Pattern) </p>
+                <p>Inspire is an App ment to be used as a home page for your browser that allows you to see a random
+                  image
+                  as a background with the time being displayed as well as your local weather. Inside the Inpire page
+                  you
+                  can also make a To Do list for tasks yopu have to do for the day.</p>
+                <hr>
+                <p class="card-text">
+                  <button type="button" class="btn btn-dark"
+                    onclick="window.location.href = 'https://github.com/ZachPfeifer/Inspire';">GitHub</button>
+                  <button type="button" class="btn btn-dark"
+                    onclick="window.location.href = 'https://zachpfeifer.github.io/Inspire/';">Website</button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/images/SlapGame-Thumbnail.png" alt="Boss Fight" style="width:366px;height:366px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Boss Fight</h1>
+                <p>HTML / JavaScript</p>
+                <p>Boss Fight is a basic browser game where you must use items or actions to kill the boss. You have 3
+                  different characters that can do actions to reduce the Bosses health.</p>
+                <hr>
+                <p class="card-text">
+                  <button type="button" class="btn btn-dark"
+                    onclick="window.location.href = 'https://github.com/ZachPfeifer/Boss-Fight';">GitHub</button>
+                  <button type="button" class="btn btn-dark"
+                    onclick="window.location.href = 'https://zachpfeifer.github.io/Boss-Fight/';">Website</button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--END PROTOTYPE TWO-->
+      </div>
+      <div class="w3-third col-3">
+        <!--NOTE: Second Prototype Card COL-2-->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="https://fsmedia.imgix.net/1a/10/39/26/8d55/4bcf/8271/e328cc14610f/total-rickall-buffyjpg.jpeg?rect=0%2C0%2C1188%2C595&auto=format%2Ccompress&dpr=2&w=650"
+                alt="Total-Rick'All" style="width:366px;height:366px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Total Rick'All</h1>
+              <p>C# (MVC Pattern)</p>
+              <p>A C# Console App inspired by the Console Adventure game Zork. In this game you move room to room to
+                find parsites to kill before you can win the game.</p>
+              <hr>
+              <p class="card-text">
+                <button type="button" class="btn btn-dark"
+                  onclick="window.location.href = 'https://github.com/ZachPfeifer/Console-Adventure';">GitHub</button>
+                <!-- <button type="button" class="btn btn-dark"
+                  onclick="window.location.href = 'https://highland-games.herokuapp.com/?#/login';">Website</button> -->
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/images/Kanban-Thumbnail.png" alt="Inspire" style="width:366px;height:366px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Kanban Board</h1>
+              <p>Vue.js / Node.js (MVC Pattern) </p>
+              <p>Kanban Board is a website inspired by trello boards. In this app you are able to make an account then
+                create boards that can have tasks and comments appended to them.</p>
+              <hr>
+              <p class="card-text">
+                <button type="button" class="btn btn-dark"
+                  onclick="window.location.href = 'https://github.com/ZacharyTyler/Kanban';">GitHub</button>
+                <button type="button" class="btn btn-dark"
+                  onclick="window.location.href = 'https://zachkanban.herokuapp.com/#/login';">Website</button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://static-cdn.jtvnw.net/ttv-boxart/Old%20School%20RuneScape.jpg" alt="RunesKeep"
+                style="width:366px;height:366px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>RunesKeeps</h1>
+              <p>Vue.js / DotNet </p>
+              <p>RunesKeep is a app that allows you to make an account login and add items to your bank. This app uses a
+                Dotnet backend and pull from a Runescape API to generate items</p>
+              <hr>
+              <p class="card-text">
+                <button type="button" class="btn btn-dark"
+                  onclick="window.location.href = 'https://github.com/ZachPfeifer/Keepr';">GitHub</button>
+                <button type="button" class="btn btn-dark"
+                  onclick="window.location.href = 'https://www.stickpng.com/assets/thumbs/58889546bc2fc2ef3a1860b8.png';">Website</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--END PROTOTYPE TWO-->
+    </div>
+
+
+
+
+
+
+    <!-- NOTE: Card Prototype
+      <div class="w3-third">
+        <div class="card bg-dark text-white">
+          <img src="https://www.stickpng.com/assets/thumbs/58889546bc2fc2ef3a1860b8.png" style="width:100%"
+            onclick="onClick(this)" alt="Coming Soon!" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Comming Soon</h5>
+            <p class="card-text">Breif Discription of the Project</p>
+            <hr>
+            <p class="card-text">
+              <button type="button" class="btn btn-dark">GitHub</button>
+              <button type="button" class="btn btn-dark">Source</button>
+            </p>
+          </div>
+        </div>
+
+        <div class="card bg-dark text-white">
+          <img src="https://www.stickpng.com/assets/thumbs/58889546bc2fc2ef3a1860b8.png" style="width:100%"
+            onclick="onClick(this)" alt="Coming Soon!" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Comming Soon</h5>
+            <p class="card-text">Breif Discription of the Project</p>
+            <hr>
+            <p class="card-text">
+              <button type="button" class="btn btn-dark">GitHub</button>
+              <button type="button" class="btn btn-dark">Source</button>
+            </p>
+          </div>
+        </div>
+        <div class="card bg-dark text-white">
+          <img src="https://www.stickpng.com/assets/thumbs/58889546bc2fc2ef3a1860b8.png" style="width:100%"
+            onclick="onClick(this)" alt="Coming Soon!" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Comming Soon</h5>
+            <p class="card-text">Breif Discription of the Project</p>
+            <hr>
+            <p class="card-text">
+              <button type="button" class="btn btn-dark">GitHub</button>
+              <button type="button" class="btn btn-dark">Source</button>
+            </p>
+          </div>
+        </div>
+      </div> -->
+    <!--END PROTOTYPE-->
+
+    <!--Prototype 0 (OG BB)-->
+    <!-- <div class="w3-third">
+        <img src="https://www.stickpng.com/assets/thumbs/58889546bc2fc2ef3a1860b8.png" style="width:100%"
+          onclick="onClick(this)" alt="Coming Soon!">
+        <img src="https://www.stickpng.com/assets/thumbs/58889546bc2fc2ef3a1860b8.png" style="width:100%"
+          onclick="onClick(this)" alt="Coming Soon!">
+        <img src="https://www.stickpng.com/assets/thumbs/58889546bc2fc2ef3a1860b8.png" style="width:100%"
+          onclick="onClick(this)" alt="Coming Soon!">
+      </div> -->
+    <!--END OF PROTOTYPE 0-->
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <!-- <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div> -->
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b class="scrible-text">About Me</b></h4>
+    <hr>
+    <img class="prettyboi" src="images/about-me-picture.jpg" alt="Pretty Boiii" class="w3-image w3-padding-32"
+      width="300" height="325">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4 class="scrible-text">Zachary Pfeifer</h4>
+      <p> Hello my name is Zachary Pfeifer and I am an aspiring Software Developer. I have been interested in coding and
+        technology since Highschool where I got my first taste of HTML/Css. From there I dipped my towes into technical
+        support for computers which lead me to want to further my knowledge in coding. Now I am a grauduate from Boise
+        Codeworks. At Codeworks I aquired knowledge on how to build full-stack app and the work that goes into
+        maintaining them. As of the moment I am looking to break into the Software Developement Industry.
+      </p>
+      <p font-weight-bold>Mail: mr.zman1@yahoo.com</p>
+      <p font-weight-bold>Telephone: (503) 689-2022</p>
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">Technical Skills</h4>
+      <p class="w3-wide">HTML/CSS</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:70%">Very Comfortable</div>
+      </div>
+      <p class="w3-wide">JavaScript</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:50%">Comfortable</div>
+      </div>
+      <p class="w3-wide">C#</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:50%">Comfortable</div>
+      </div>
+      <a href="/images/ZacharyPfeiferSD-Resume.pdf" download>
+        <button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Download
+          Resume</button>
+      </a>
+
+      <hr class="w3-opacity">
+
+      <h4 class="w3-padding-16">technology's Used:</h4>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <p><i class="fab fa-html5  fa-10x"></i> HTML5</p>
+            </div>
+            <div class="col-12 col-sm-6">
+              <p><i class="fab fa-css3-alt fa-10x"></i> CSS3</p>
+
+            </div>
+            <div class="col-12 col-sm-6">
+              <p><i class="fab fa-js-square fa-10x"></i> JavaScript</p>
+
+            </div>
+            <div class="col-12 col-sm-6">
+              <p><i class="fab fa-vuejs fa-10x"></i> Vue.js</p>
+
+            </div>
+          </div>
+          <!--Potential Problem Code-->
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <p><i class="fab fa-node fa-10x"></i> Node.js</p>
+            </div>
+            <div class="col-12 col-sm-6">
+              <p><img class="fab fa-10x"
+                  src="https://www.engipedia.com/wordpress/wp-content/uploads/2019/07/2Revit-Api-Csharp-engipedia.com-logo-icon.png"
+                  alt="MongoDB" style="width:150px;height:150px;"> C#
+              </p>
+
+            </div>
+            <div class="col-12 col-sm-6">
+              <p><i class="fab fa-docker fa-10x"></i> Docker</p>
+
+            </div>
+            <div class="col-12 col-sm-6">
+              <p><img class="fab fa-10x" src="https://png.pngtree.com/svg/20170504/mongodb_1014588.png" alt="MongoDB"
+                  style="width:150px;height:150px;"> MongoDB
+              </p>
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <p><img class="fab fa-10x" src="https://database-programmers.com/img/icons/icon-mysql.png" alt="MySQL"
+                  style="width:150px;height:150px;"> MySQL
+              </p>
+
+            </div>
+            <div class="col-12 col-sm-6">
+              <p><img class="fab fa-10x"
+                  src="https://cdn0.iconfinder.com/data/icons/colored-e-learning-coding-tutorial-badges/96/Coding_Icons_-_COLORS-11-512.png"
+                  alt="DotNet" style="width:150px;height:150px;"> DotNet
+              </p>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>Contact Me</b></h4>
+      <p>Are you interested in my work or have any question I can help you with? Send me a message.</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">
+          <label>Company</label>
+          <input class="w3-input w3-border" type="text" name="Company" required>
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">
+    <div class="w3-row-padding">
+      <div class="w3-third">
+
+        <h3> <i class="fas fa-user-ninja fa-2x  style=" width:50px"></i> INFO</h3>
+        <hr>
+        <p class="font-italic info-padding">I am a relatively new Software Developer and I'm always looking for new
+          ways of doing
+          thing. I love
+          learning new things so always feel free to send me messages by using my Contact Me area.</p>
+        <hr>
+      </div>
+
+      <div class="w3-third">
+
+        <h3><i class="fas fa-users fa-2x w3-margin-right" style="width:50px"></i> Other Media Sites</h3>
+        <hr>
+        <ul class="w3-ul">
+          <li class="w3-padding-16 w3-hover-black"><a class="social-link"
+              href="https://www.facebook.com/zach.pfeifer.10">
+              <i class="fab fa-facebook fa-lg"></i>
+
+              <span class="w3-large">FaceBook</span><br>
+              <span>
+                <p class="font-italic"> Where faces go</p></a>
+            </span>
+          </li>
+          <li class="w3-padding-16 w3-hover-black"><a class="social-link" href="https://github.com/ZachPfeifer">
+              <i class="fab fa-github fa-lg"></i>
+              <span class="w3-large">GitHub</span><br>
+              <span>
+                <p class="font-italic"> Code Hub</p></a>
+            </span>
+          </li>
+          <li class="w3-padding-16 w3-hover-black"><a class="social-link"
+              href="https://www.linkedin.com/in/zachary-pfeifer-7227b3192/">
+              <i class="fab fa-linkedin fa-lg"></i>
+              <span class="w3-large">Linked-In</span><br>
+              <span>
+                <p class="font-italic"> Professional Profile</p></a>
+            <hr>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <h3><i class="fas fa-toolbox fa-2x w3-margin-right"></i>Most Used Tools:</h3>
+        <hr>
+        <p>
+          <span class="w3-tag w3-black w3-margin-bottom"><a class="social-link" href="https://www.w3schools.com"> W3
+              Schools</a></span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"><a class="social-link"
+              href="https://getbootstrap.com/docs/4.2/getting-started/introduction/"> Bootstrap</a></span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"><a class="social-link"
+              href="https://fontawesome.com/"> Awesome Fonts</a></span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"><a class="social-link"
+              href="https://www.quackit.com/html/codes/">
+              Quackit</a></span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"><a class="social-link"
+              href="https://fonts.google.com/">
+              Google Fonts</a></span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"><a class="social-link"
+              href="https://stackoverflow.com">Stack Overflow</a></span>
+        </p>
+        <hr>
+      </div>
+    </div>
+  </footer>
+
+  <div class=" w3-right credit">Inspired by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS"
+      target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+  <!-- End page content -->
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+  </script>
+
+
+</body>
+
+</html>
