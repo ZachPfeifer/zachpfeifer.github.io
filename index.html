@@ -20,16 +20,17 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
+
 <link rel="stylesheet" href="/assets/style.css">
 
 
 <body>
 
   <!-- Links (sit on top) -->
-  <div class="w3-top">
-    <div class="w3-row w3-padding w3-black">
+  <!-- <div class="w3-top ">
+    <div class="w3-row w3-padding w3-black topnav" id="myTopnav">
       <div class="w3-col s3">
-        <a href="#" class="w3-button w3-block w3-black">HOME</a>
+        <a href="#" class="w3-button w3-block w3-black active">HOME</a>
       </div>
       <div class="w3-col s3">
         <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
@@ -40,8 +41,29 @@
       <div class="w3-col s3">
         <a href="#project" class="w3-button w3-block w3-black">TECHNOLOGIES</a>
       </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div> -->
+
+
+  <!-- TEST-->
+  <div class="w3-top ">
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#project">PROJECTS</a>
+      <a href="#project">TECHNOLOGIES</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
   </div>
+
+
+
+
 
   <!-- Header with image -->
   <header class="bgimg w3-display-container w3-grayscale-min" id="home">
@@ -473,6 +495,14 @@
                     <i class="fab fa-vuejs fa-5x"></i> Vue.js
                   </p>
                 </div>
+                <div class="col-12 col-sm-6">
+                  <p>
+                    <i class="fab fa-react fa-5x"></i>React </p>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <p>
+                    <i class="fas fa-terminal fa-5x"></i> CLI </p>
+                </div>
               </div>
               <!--Potential Problem Code-->
               <div class="row">
@@ -601,6 +631,16 @@
         document.getElementById("modal01").style.display = "block";
         var captionText = document.getElementById("caption");
         captionText.innerHTML = element.alt;
+      }
+
+      //NAV BAR
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
       }
 
     </script>

@@ -12,14 +12,16 @@
   }
 
   .menu {
-    display: none;
+    display: list-item;
+    padding: 0;
+    overflow: scroll;
   }
 
 .elegantshadow
 {
   color: #131313;
   font-weight: bold;
-  font-size: 100px;
+  font-size: 16vw;
   /* background-color: #e7e5e4; */
   letter-spacing: .15em;
   text-shadow:
@@ -206,12 +208,12 @@ a.social-link:link {
 
 /* visited link */
 a.social-link:visited {
-  color: whitesmoke;
+  color: grey;
 }
 
 /* mouse over link */
 a.social-link:hover {
-  color: whitesmoke;
+  color: grey;
 }
 
 /* selected link */
@@ -228,3 +230,65 @@ a.social-link:active {
     padding-top: 6%;
     text-align: center;}
 
+.w3-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  justify-content: center; 
+  display: flex;
+  background: black;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+    justify-content: center; 
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: grey;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: grey;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
