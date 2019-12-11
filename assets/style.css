@@ -1,8 +1,24 @@
- body,
-  html {
-    height: 100%;
-    font-family: "Inconsolata", sans-serif;
-  }
+body,
+html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Lacquer', sans-serif;
+}
+
+p{
+  /* font-family: 'Libre Baskerville', serif; */
+  font-family: 'Libre Caslon Text', serif;
+font-weight: bold;
+}
+button{
+  opacity: 1;
+}
 
   .bgimg {
     background-position: center;
@@ -74,17 +90,6 @@
   background-color: rgba(255, 255, 255, 0.212);
 }
 
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-family: 'Lacquer', sans-serif;
-  }
-  button{
-    opacity: 1;
-  }
 
 /* Card Font Size */
 .font-size{
@@ -239,6 +244,10 @@ a.social-link:active {
   background: black;
   display: flex;
   justify-content: center; 
+}
+
+.w3-padding-64{
+padding-bottom: 0px!important;
 }
 
 .topnav {
